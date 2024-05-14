@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+{{ super() }}
+<p>Метод модели Дерево условий
+<form action="/model_Wood" method="POST">
+    <p><input name="list1" class="form_text" type="text"> Введите температуру тела в градусах цельсиях</p>
+    <p><input name="list2" class="form_text" type="text"> Введите пульс </p>
+    <p><input name="list3" class="form_text" type="text"> Введите уровень боли</p>
+    <input type="submit" class="form_btn" value="Узнать пол">
+    <h1>{{class_model}}</h1>
+    </p>
+</form>
+
+
+
+{% endblock %}
